@@ -1,0 +1,52 @@
+@include mediaXL {
+}
+
+@include mediaLg {
+}
+
+@include mediaMd {
+  main {
+    align-items: center;
+    text-align: center;
+
+    .lg-heading {
+      line-height: 1.5;
+      margin-top: 10rem;
+      margin-bottom: 1rem;
+    }
+  }
+  ul.menu-nav {
+    float: none;
+    width: 100%;
+    min-height: 0;
+    height: 8rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-flow: column;
+    text-align: center;
+    &.show {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  .menu-nav {
+    height: 75vh;
+    transform: translate3d(-100%, 0, 0);
+  }
+  .about-info {
+    grid-template-areas:
+      "bioimage"
+      "bio";
+    grid-template-columns: 1fr;
+  }
+
+  .menu-btn {
+    top: 25px;
+  }
+  .projects {
+    grid-template-columns: 1fr;
+  }
+}
+
+@include mediaSm {
+}
