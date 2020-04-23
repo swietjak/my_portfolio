@@ -84,7 +84,13 @@ main {
   grid-area: bioimage;
   margin: auto;
   border-radius: 50%;
+
   border: $secondary-color 3px solid;
+
+  img {
+    height: 50px;
+    width: 50px;
+  }
 }
 
 .bio {
