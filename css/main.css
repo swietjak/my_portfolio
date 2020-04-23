@@ -156,6 +156,9 @@ main {
   margin: auto;
   border-radius: 50%;
   border: #29b129 3px solid; }
+  .bio-image img {
+    height: 50px;
+    width: 50px; }
 
 .bio {
   grid-area: bio;
